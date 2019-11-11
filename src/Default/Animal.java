@@ -12,4 +12,5 @@ public interface Animal {
     static void happy(){
         System.out.println("Happy");
     }
+
 }

@@ -2,6 +2,8 @@ package base64;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Base64;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Base64Test {
     /**
@@ -14,7 +16,9 @@ public class Base64Test {
         Base64.Decoder decoder = Base64.getDecoder();
         String password ="this is password";
         byte[] text = encoder.encode(password.getBytes("UTF-8"));
+        System.out.println(new String(text));
         text = decoder.decode(text);
+        System.out.println(new String(text));
 
     }
 }
