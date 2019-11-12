@@ -1,9 +1,18 @@
 package optition;
 
 public class Student {
-    private int id;
+    private int age;
     private String name;
     private String classes;
+    private int id;
+
+    public Student(int age) {
+        this.age = age;
+    }
+
+    public Student() {
+    }
+
 
     public int getId() {
         return id;
@@ -11,6 +20,14 @@ public class Student {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {

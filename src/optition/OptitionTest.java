@@ -20,5 +20,8 @@ public class OptitionTest {
             result=optional.orElse(new Student());
         }
         System.out.println(result);
+
+
+        optional.map(obj->obj.getAge()).orElse(1);
     }
 }
